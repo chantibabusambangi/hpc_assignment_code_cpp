@@ -56,8 +56,7 @@ int main() {
     for (int i = 0; i < num_samples; ++i) {
         for (int j = 1; j < num_features; ++j) { // Start from index 1 (bias term at index 0)
             X[i][j] = dist(gen); // Random feature values
-        }
-        y[i] = 1.5 * X[i][1] + 2.2 * X[i][2] - 0.8 * X[i][3] + 3.7 * X[i][4] + dist(gen); // Linear function + noise
+        }        y[i] = 1.5 * X[i][1] + 2.2 * X[i][2] - 0.8 * X[i][3] + 3.7 * X[i][4] + dist(gen); // Linear function + noise
     }
 
     // Initialize theta
